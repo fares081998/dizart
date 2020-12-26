@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fade {
+  transform: translateX(-200%);
+}
+header {
+  height: 100vh;
+  overflow: hidden;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #8543a2, #6755be);
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  padding: 0 20px;
+}
+.navlist {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.navlist ul {
+  display: flex;
+  list-style: none;
+  width: 80%;
+  justify-content: space-around;
+}
+.navlist ul li {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+.logo {
+  margin-top: 5px;
+  height: 70px;
+  width: 200px;
+}
+.heading_main {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+}
+.heading_img {
+  height: 500px;
+  margin-top: 20px;
+  animation: animate 1.5s ease 0.3s;
+}
+.data {
+  padding: 20px 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  animation: animate2 1.5s ease-out 0.3s;
+}
+.data_title {
+  font-size: 25px;
+  color: #1f2077;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+.data_details {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #969696;
+  font-family: "Open Sans", sans-serif;
+
+  text-align: center;
+}
+.social {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social i {
+  color: #fff;
+  margin: 0 15px;
+}
+
+.data_toggle {
+  font-size: 35px;
+
+  color: #6755be;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  transition: 0.3s ease-out;
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+.about {
+  background: linear-gradient(to right, #8543a2, #6755be);
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  height: 60vh;
+}
+.about_img {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.about_details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+.about_paragraph {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.856);
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  width: 70%;
+}
+.about_img img {
+  width: 100%;
+}
+.about_title {
+  font-size: 30px;
+  color: #fff;
+
+  font-family: "Open Sans", sans-serif;
+}
+.btn {
+  margin-top: 30px;
+  width: 180px;
+  height: 50px;
+  background: linear-gradient(to right, #8543a2, #6755be);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+.services {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 70vh;
+  flex-direction: column;
+  background-color: #e4e4e4;
+}
+.services_title {
+  font-size: 40px;
+  color: #6755be;
+  font-family: "Open Sans", sans-serif;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  width: 100%;
+}
+.nos_services {
+  padding: 30px 0;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.nos_services_details {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.card {
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+.card div {
+  width: 100%;
+}
+.card_img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.322);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_img i {
+  font-size: 40px;
+  color: #6755be;
+}
+.nos_services_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nos_services_img img {
+  height: 100%;
+}
+.card_details {
+  padding: 10px;
+}
+.card_details h3 {
+  font-family: "Open Sans", sans-serif;
+}
+.card_details p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
